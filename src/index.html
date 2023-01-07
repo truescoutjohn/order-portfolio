@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Page</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="overlay"></div>
+      <div class="top-section">
+        <div class="header" id="header">
+          <div class="header__wrapper">
+            <nav class="header__navigation navigation">
+              <div class="navigation__item">
+                <a href="#header" class="navigation__link">головна</a>
+              </div>
+              <div class="navigation__item">
+                <a href="#about" class="navigation__link">про нас</a>
+              </div>
+              <div class="navigation__item">
+                <a href="#service" class="navigation__link">послуги</a>
+              </div>
+              <div class="navigation__item">
+                <a href="#portfolio" class="navigation__link">портфоліо</a>
+              </div>
+              <div class="navigation__item">
+                <a href="#" class="navigation__link">залаштунки</a>
+              </div>
+              <div class="navigation__item">
+                <a href="#contacts" class="navigation__link">контакты</a>
+              </div>
+              <div class="navigation__item"><a href="#" class="navigation__link">ua</a></div>
+            </nav>
+            <button class="burger header__burger">
+              <span class="burger__line burger__line_top"></span>
+              <span class="burger__line burger__line_bottom"></span>
+            </button>
+            <nav class="burger-menu">
+              <div class="burger-menu__item">
+                <a href="#header" class="burger-menu__link">головна</a>
+              </div>
+              <div class="burger-menu__item">
+                <a href="#about" class="burger-menu__link">про нас</a>
+              </div>
+              <div class="burger-menu__item">
+                <a href="#service" class="burger-menu__link">послуги</a>
+              </div>
+              <div class="burger-menu__item">
+                <a href="#portfolio" class="burger-menu__link">портфоліо</a>
+              </div>
+              <div class="burger-menu__item">
+                <a href="#backgrounds" class="burger-menu__link">залаштунки</a>
+              </div>
+              <div class="burger-menu__item">
+                <a href="#contacts" class="burger-menu__link">контакты</a>
+              </div>
+              <div class="menu">
+                <button class="toggle">Мова</button>
+                <ul class="list">
+                  <li class="list__item" style="--delay: 0.2s">Українська</li>
+                  <li class="list__item" style="--delay: 0.4s">Англійська</li>
+                </ul>
+              </div>
+              <img src="./assets/img/logoFull.png" alt="logo" class="logo_burger" />
+            </nav>
+          </div>
+        </div>
+        <div class="headline">
+          <div class="headline__wrapper">
+            <h1 class="headline__heading">
+              тут знімається істо<img
+                class="headline__logo"
+                src="./assets/img/graphics.png"
+                alt="logo"
+              />ія
+            </h1>
+            <p class="headline__description">
+              <span class="headline__highlight">Український</span>
+              шоуріл
+            </p>
+            <div class="socials socials-headline socials_center">
+              <div class="socials__item">
+                <a href="#" class="socials__link"
+                  ><i class="socials__icon socials__icon_instagram"></i
+                ></a>
+              </div>
+              <div class="socials__item">
+                <a href="#" class="socials__link"
+                  ><i class="socials__icon socials__icon_facebook"></i
+                ></a>
+              </div>
+              <div class="socials__item">
+                <a href="#" class="socials__link">
+                  <span class="socials__link-description">ШОУРІЛ</span>
+                  <span class="socials__link-description"
+                    ><i class="socials__icon socials__icon_right-arrow"></i
+                  ></span>
+                  <span class="socials__link-description"
+                    ><i class="socials__icon socials__icon_play-button"></i
+                  ></span>
+                </a>
+              </div>
+            </div>
+            <div class="callback-bt">
+              <div class="text-call">
+                <span>Заказать<br />звонок</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about">
+        <div class="about__overlay"></div>
+        <div class="about__wrapper">
+          <img src="./assets/img/logoFull.png" alt="logo" class="logo" />
+          <h3 class="about__heading" id="about">про нас</h3>
+          <p class="about__description">
+            RRroduction Studio - український відеопродакшн повного циклу, який існує у медіапросторі
+            з 2016 року.<br />
+            Кожне наше відео - це окрема історія, яку знімає команда професіоналів, натхненна
+            створенням поістину якісного контенту. Ми креативні, амбітні та мультизадачні, а
+            найголовніше - всі наші клієнти завжди задоволені кінцевим результатом!
+          </p>
+          <div class="about__author-left author">
+            <img src="./assets/img/author1.png" alt="author1" class="author__image" />
+            <div class="author__content">
+              <h2 class="author__heading">размік погосян</h2>
+              <p class="author__role">засновник & продюсер</p>
+              <p class="author__description">
+                Створювати круті відео - це не робота, а задоволення!<br />
+                Саме тому наші результати завжди перевищують очікування клієнтів. Я впевнений, що
+                якісний відеоконтент - змінює світ на краще!
+              </p>
+              <div class="socials">
+                <div class="socials__item">
+                  <a href="#" class="socials__link"
+                    ><i class="socials__icon socials__icon_instagram"></i
+                  ></a>
+                </div>
+                <div class="socials__item">
+                  <a href="#" class="socials__link"
+                    ><i class="socials__icon socials__icon_facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about__author-right author">
+            <img src="./assets/img/author2.png" alt="author2" class="author__image" />
+            <div class="author__content">
+              <h2 class="author__heading">роман діхтярь</h2>
+              <p class="author__role">сценаріст</p>
+              <p class="author__description">
+                Коли є натхнення, будуть ідеї. Ідеї стають сценаріями.<br />
+                Зі сценаріїв виходить креативний контент.<br />
+                А креативний контент - це і є натхнення!
+              </p>
+              <div class="socials socials_right">
+                <div class="socials__item">
+                  <a href="#" class="socials__link"
+                    ><i class="socials__icon socials__icon_instagram"></i
+                  ></a>
+                </div>
+                <div class="socials__item">
+                  <a href="#" class="socials__link"
+                    ><i class="socials__icon socials__icon_facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="service">
+        <div class="service__wrapper">
+          <div class="service__overlay"></div>
+          <h2 class="service__navigation-heading" id="service">Послуги</h2>
+          <div class="service__navigation-wrapper">
+            <div class="service__navigation-left-column">
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="service__video"
+                autoplay
+              ></video>
+            </div>
+            <div class="service__navigation-middle-column">
+              <nav class="service__navigation">
+                <div class="service__navigation-item">Рекламні ролики</div>
+                <div class="service__navigation-item">Корпоративні відео</div>
+                <div class="service__navigation-item">Ютуб канал "під ключ"</div>
+                <div class="service__navigation-item">Музичні кліпи</div>
+                <div class="service__navigation-item">Фільми</div>
+              </nav>
+            </div>
+            <div class="service__navigation-right-column">
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="service__video"
+                autoplay
+              ></video>
+            </div>
+          </div>
+          <h2 class="full-cycle__main-heading">повний цикл створення відео</h2>
+          <div class="full-cycle__wrapper">
+            <div class="full-cycle__left-column">
+              <h6 class="full-cycle__heading">
+                <i class="full-cycle__icon full-cycle__icon_idea"></i>ідея
+              </h6>
+              <p class="full-cycle__description">
+                Розробка ідеї - це один з основних етапів при створенні відео.
+              </p>
+              <h6 class="full-cycle__heading">
+                <i class="full-cycle__icon full-cycle__icon_idea"></i>ідея
+              </h6>
+              <p class="full-cycle__description">
+                Розробка ідеї - це один з основних етапів при створенні відео.
+              </p>
+              <h6 class="full-cycle__heading">
+                <i class="full-cycle__icon full-cycle__icon_idea"></i>ідея
+              </h6>
+              <p class="full-cycle__description">
+                Розробка ідеї - це один з основних етапів при створенні відео.
+              </p>
+            </div>
+            <div class="full-cycle__right-column">
+              <h6 class="full-cycle__heading">
+                <i class="full-cycle__icon full-cycle__icon_idea"></i>ідея
+              </h6>
+              <p class="full-cycle__description">
+                Розробка ідеї - це один з основних етапів при створенні відео.
+              </p>
+              <h6 class="full-cycle__heading">
+                <i class="full-cycle__icon full-cycle__icon_idea"></i>ідея
+              </h6>
+              <p class="full-cycle__description">
+                Розробка ідеї - це один з основних етапів при створенні відео.
+              </p>
+              <h6 class="full-cycle__heading">
+                <i class="full-cycle__icon full-cycle__icon_idea"></i>ідея
+              </h6>
+              <p class="full-cycle__description">
+                Розробка ідеї - це один з основних етапів при створенні відео.
+              </p>
+            </div>
+          </div>
+          <h6 class="full-cycle__heading full-cycle__heading-separate-block">
+            <i class="full-cycle__icon full-cycle__icon_idea"></i>колористика
+          </h6>
+          <p class="full-cycle__description full-cycle__description-separate-block">
+            Камера і оптика мають велике значення для зображення, але без належної корекції картинка
+            не зможе здобути глибину і насиченість.
+          </p>
+        </div>
+      </div>
+      <div class="portfolio">
+        <div class="portfolio__wrapper">
+          <div class="portfolio__overlay"></div>
+          <img src="./assets/img/logoFull.png" alt="logo" class="logo logo_portfolio" />
+          <h2 class="portfolio__heading" id="portfolio">портфоліо</h2>
+          <div class="portfolio__videos-wrapper">
+            <div class="portfolio__video-wrapper">
+              <div class="portfolio__hint">Portfolio</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="portfolio__video"
+              ></video>
+            </div>
+            <div class="portfolio__video-wrapper">
+              <div class="portfolio__hint">Portfolio</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="portfolio__video"
+              ></video>
+            </div>
+            <div class="portfolio__video-wrapper">
+              <div class="portfolio__hint">Portfolio</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="portfolio__video"
+              ></video>
+            </div>
+            <div class="portfolio__video-wrapper">
+              <div class="portfolio__hint">Portfolio</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="portfolio__video"
+              ></video>
+            </div>
+            <div class="portfolio__video-wrapper">
+              <div class="portfolio__hint">Portfolio</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="portfolio__video"
+              ></video>
+            </div>
+            <div class="portfolio__video-wrapper">
+              <div class="portfolio__hint">Portfolio</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="portfolio__video"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="backgrounds">
+        <div class="backgrounds__wrapper">
+          <div class="backgrounds__overlay"></div>
+          <img src="./assets/img/logoFull.png" alt="logo" class="logo logo_backgrounds" />
+          <h2 class="backgrounds__heading" id="backgrounds">Залаштунки</h2>
+          <div class="backgrounds__videos-wrapper">
+            <div class="backgrounds__video-wrapper">
+              <div class="backgrounds__hint">Backgrounds</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="backgrounds__video"
+              ></video>
+            </div>
+            <div class="backgrounds__video-wrapper">
+              <div class="backgrounds__hint">Backgrounds</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="backgrounds__video"
+              ></video>
+            </div>
+            <div class="backgrounds__video-wrapper">
+              <div class="backgrounds__hint">Backgrounds</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="backgrounds__video"
+              ></video>
+            </div>
+            <div class="backgrounds__video-wrapper">
+              <div class="backgrounds__hint">Backgrounds</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="backgrounds__video"
+              ></video>
+            </div>
+            <div class="backgrounds__video-wrapper">
+              <div class="backgrounds__hint">Backgrounds</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="backgrounds__video"
+              ></video>
+            </div>
+            <div class="backgrounds__video-wrapper">
+              <div class="backgrounds__hint">Backgrounds</div>
+              <video
+                src="./assets/video/production ID_4155675.mp4"
+                class="backgrounds__video"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts__wrapper">
+          <img src="./assets/img/logoFull.png" alt="logo" class="logo logo_contacts" />
+          <h3 class="contacts__heading" id="contacts">контакты</h3>
+          <div class="contacts__content">
+            <div class="contacts__left-column">
+              <h4 class="contacts__left-column-heading">
+                Український відеопродакшн повного циклу!
+              </h4>
+              <div class="contacts__subcolumns-wrapper">
+                <div class="contacts__left-subcolumm">
+                  <h5 class="contacts__left-subcolumn-heading">ми у соцмережах</h5>
+                  <div class="links">
+                    <a href="#" class="links__link links__link_facebook"
+                      ><i class="links__icon"></i>Ми у Facebook</a
+                    >
+                    <a href="#" class="links__link links__link_instagram"
+                      ><i class="links__icon"></i>Ми в Instagram</a
+                    >
+                  </div>
+                </div>
+                <div class="contacts__right-subcolumm">
+                  <h5 class="contacts__left-subcolumn-heading">контакти</h5>
+                  <a href="#" class="links__link links__link_phone"
+                    ><i class="links__icon"></i>+38073 073 20 99 (TELEGRAM, VIBER)</a
+                  >
+                  <a href="#" class="links__link links__link_email"
+                    ><i class="links__icon"></i>info@rproductionstudio.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contacts__right-column">
+              <h4 class="contacts__right-column-heading">хочете працювати з нами</h4>
+              <p class="contacts__right-column-description">
+                Ми з радістю вислухаємо ваші ідеї та обговоримо найкращі варіанти їх реалізації.
+              </p>
+              <form action="/" method="get" class="order">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Ваше ім'я"
+                  class="order__input"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ваш email"
+                  class="order__input"
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  class="order__textarea"
+                  placeholder="Text"
+                ></textarea>
+                <input type="submit" value="Відправити" class="order__submit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

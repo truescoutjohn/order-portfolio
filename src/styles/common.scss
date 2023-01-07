@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  z-index: -5;
+}
+.top-section {
+  background-color: #000000;
+  background-image: url(./assets/video/headerBackground.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 17px;
+  }
+
+  &__icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    &_instagram {
+      background-image: url(./assets/img/instagram.svg);
+    }
+
+    &_facebook {
+      background-image: url(./assets/img/facebook.svg);
+    }
+  }
+}
+.page {
+  position: relative;
+  z-index: -4;
+}
+.logo {
+  position: absolute;
+  top: 112px;
+  left: 223px;
+
+  @include to-sm-desktop {
+    display: none;
+  }
+
+  &_burger {
+    position: absolute;
+    display: block;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  &_portfolio {
+    top: -65px;
+    left: 55px;
+  }
+
+  &_backgrounds {
+    top: -40px;
+    left: 55px;
+  }
+
+  &_contacts {
+    top: 394px;
+    left: 55px;
+  }
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #00000088;
+  &.active {
+    display: block;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-rows: 40px max-content;
+  gap: 10px;
+}
+
+.toggle {
+  all: unset;
+  background-color: #93268b;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-width: 0 3px 3px 0;
+  border-style: solid;
+  transform: rotate(45deg);
+  transition: 0.4s;
+}
+
+.list {
+  background-color: white;
+  color: #444;
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(2, 40px);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.4s;
+}
+
+.list__item {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.4s, transform 0.4s var(--delay);
+  transform: translateX(-100%);
+  user-select: none;
+  cursor: pointer;
+}
+
+.list__item:hover {
+  background-color: dodgerblue;
+  color: #fff;
+}
+
+.toggle:focus::after {
+  transform: rotate(225deg);
+}
+
+.toggle:focus ~ .list {
+  height: 80px;
+}
+
+.toggle:focus ~ .list .list__item {
+  transform: translateX(0);
+}
